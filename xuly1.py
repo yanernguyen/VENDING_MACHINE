@@ -1,12 +1,12 @@
 from PyQt6 import QtWidgets, uic
 from PyQt6.QtWidgets import QMessageBox
 import sys
-from funtion import *
+from Function import *
 
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__()
-        uic.loadUi('giaodien.ui', self)
+        uic.loadUi('giaodien2.ui', self)
         self.lienketnutlenh()
         self.functions = SmartMartFunctions()
         self.show()
@@ -15,6 +15,7 @@ class Ui(QtWidgets.QMainWindow):
         self.pushButton_ADD.clicked.connect(self.add_to_cart)
         self.pushButton_REMOVE.clicked.connect(self.remove_from_cart)
         self.pushButton_CHECKOUT.clicked.connect(self.checkout)
+
     def show_category_products(self, category):
         self.product_list.clear()
         for product in self.functions.products:
