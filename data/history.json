@@ -1,0 +1,154 @@
+[
+    {
+        "time": "2025-03-12 14:35:28",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0001",
+        "product_name": "CocaCola",
+        "quantity": 10
+    },
+    {
+        "time": "2025-03-12 14:37:55",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0001",
+        "product_name": "CocaCola",
+        "quantity": 10
+    },
+    {
+        "time": "2025-03-12 14:38:54",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-12 14:39:55",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-12 15:04:14",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0004",
+        "product_name": "Red Bull",
+        "quantity": 2
+    },
+    {
+        "time": "2025-03-12 15:51:14",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-12 16:07:35",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-12 16:39:03",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-12 16:39:08",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-12 16:39:08",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-13 15:17:22",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-13 15:18:23",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0001",
+        "product_name": "CocaCola",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-13 15:18:31",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0001",
+        "product_name": "CocaCola",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-14 23:59:55",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-15 00:08:41",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0002",
+        "product_name": "Pepsi",
+        "quantity": 5
+    },
+    {
+        "time": "2025-03-15 08:16:06",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0003",
+        "product_name": "Aquafina",
+        "quantity": 10
+    },
+    {
+        "time": "2025-03-15 08:33:02",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0004",
+        "product_name": "Red Bull",
+        "quantity": 1
+    },
+    {
+        "time": "2025-03-15 08:46:39",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0017",
+        "product_name": "Hot Dog",
+        "quantity": 12
+    },
+    {
+        "time": "2025-03-15 08:46:57",
+        "admin": "admin1",
+        "action": "Cập nhật số lượng",
+        "product_id": "SP_0013",
+        "product_name": "Toothpaste",
+        "quantity": 12
+    }
+]
