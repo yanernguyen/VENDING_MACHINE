@@ -3,7 +3,7 @@ from PyQt6.QtWidgets import QMessageBox, QLabel, QFrame, QPushButton, QVBoxLayou
 from PyQt6.QtGui import QPixmap
 from PyQt6.QtCore import Qt
 import sys
-from Function_moi import *  # Import class quản lý sản phẩm và giỏ hàng
+from Function import *  # Import class quản lý sản phẩm và giỏ hàng
 
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):

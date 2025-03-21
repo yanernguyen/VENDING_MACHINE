@@ -1,7 +1,7 @@
 
 import json
 from typing import List, Dict
-from Product import *
+from CProduct import *
 class Cart:
     def __init__(self):
         self.items: Dict[str, int] = {}  #giúp lưu trữ giỏ hàng theo tên sản phẩm và số lượng.

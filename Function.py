@@ -1,6 +1,6 @@
 import json
-from Product import *
-from Cart import *
+from CProduct import *
+from CCart import *
 
 
 class SmartMartFunctions:
