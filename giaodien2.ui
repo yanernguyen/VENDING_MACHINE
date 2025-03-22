@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1130</width>
+    <height>1015</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Fixed" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="autoFillBackground">
+   <bool>false</bool>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QPushButton" name="pushButton_SEARCH">
+    <property name="enabled">
+     <bool>true</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>470</x>
+      <y>20</y>
+      <width>101</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #AFE1AF; /* Màu xanh lá */
+    color: black; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}</string>
+    </property>
+    <property name="text">
+     <string>SEARCH</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="search_bar">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>20</y>
+      <width>441</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border: 2px solid #E0E0E0;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-size: 14px;
+}
+
+QLineEdit:focus {
+    border: 2px solid #4CAF50;
+}</string>
+    </property>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>661</width>
+      <height>81</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QScrollBar:vertical {
+    border: none;
+    background: #F5F7FA;
+    width: 8px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical {
+    background: #4CAF50;
+    border-radius: 4px;
+}
+
+QScrollBar::handle:vertical:hover {
+    background: #388E3C;
+}</string>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustIgnored</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollContent1">
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>659</width>
+       <height>79</height>
+      </rect>
+     </property>
+     <widget class="QPushButton" name="pushButton_Beverages">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #AFE1AF; /* Màu xanh lá */
+    color: black; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>BEVERAGES</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_FastFood">
+      <property name="geometry">
+       <rect>
+        <x>180</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #AFE1AF; /* Màu xanh lá */
+    color: black; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>FAST FOOD</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_Snacks">
+      <property name="geometry">
+       <rect>
+        <x>340</x>
+        <y>20</y>
+        <width>101</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #AFE1AF; /* Màu xanh lá */
+    color: black; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>SNACKS</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_PersonalCares">
+      <property name="geometry">
+       <rect>
+        <x>500</x>
+        <y>20</y>
+        <width>131</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">QPushButton {
+    background-color: #AFE1AF; /* Màu xanh lá */
+    color: black; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}</string>
+      </property>
+      <property name="text">
+       <string>PERSONAL CARES</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="groupBox">
+    <property name="geometry">
+     <rect>
+      <x>679</x>
+      <y>9</y>
+      <width>441</width>
+      <height>691</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>9</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>BILL</string>
+    </property>
+    <property name="alignment">
+     <set>Qt::AlignRight|Qt::AlignTop|Qt::AlignTrailing</set>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <widget class="QTableWidget" name="cart_table">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>41</y>
+       <width>421</width>
+       <height>331</height>
+      </rect>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QTableWidget {
+    background: white;
+    border-radius: 5px;
+    border: 1px solid #E0E0E0;
+    gridline-color: #E0E0E0;
+}
+
+QTableWidget::item {
+    padding: 8px;
+}
+
+QHeaderView::section {
+    background: #4CAF50;
+    color: white;
+    padding: 5px;
+    border: none;
+}</string>
+     </property>
+     <property name="frameShape">
+      <enum>QFrame::NoFrame</enum>
+     </property>
+     <property name="verticalScrollBarPolicy">
+      <enum>Qt::ScrollBarAsNeeded</enum>
+     </property>
+     <property name="horizontalScrollBarPolicy">
+      <enum>Qt::ScrollBarAlwaysOff</enum>
+     </property>
+     <property name="sizeAdjustPolicy">
+      <enum>QAbstractScrollArea::AdjustToContents</enum>
+     </property>
+     <property name="autoScrollMargin">
+      <number>26</number>
+     </property>
+     <property name="selectionMode">
+      <enum>QAbstractItemView::MultiSelection</enum>
+     </property>
+     <property name="selectionBehavior">
+      <enum>QAbstractItemView::SelectRows</enum>
+     </property>
+     <attribute name="horizontalHeaderCascadingSectionResizes">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="horizontalHeaderDefaultSectionSize">
+      <number>140</number>
+     </attribute>
+     <attribute name="horizontalHeaderStretchLastSection">
+      <bool>true</bool>
+     </attribute>
+     <attribute name="verticalHeaderDefaultSectionSize">
+      <number>31</number>
+     </attribute>
+     <attribute name="verticalHeaderHighlightSections">
+      <bool>false</bool>
+     </attribute>
+     <attribute name="verticalHeaderMinimumSectionSize">
+      <number>31</number>
+     </attribute>
+     <column>
+      <property name="text">
+       <string>NAME</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>QUANTITY</string>
+      </property>
+     </column>
+     <column>
+      <property name="text">
+       <string>PRICE</string>
+      </property>
+     </column>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>490</y>
+       <width>421</width>
+       <height>191</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QPushButton" name="pushButton_ADD_2">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>439</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Màu xanh lá */
+    color: white; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}
+QPushButton:pressed {
+    background-color: #388E3C;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>CANCEL</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_ADD">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>439</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Màu xanh lá */
+    color: white; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}
+QPushButton:pressed {
+    background-color: #388E3C;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>ADD</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_REMOVE">
+        <property name="maximumSize">
+         <size>
+          <width>439</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #4CAF50; /* Màu xanh lá */
+    color: white; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}
+QPushButton:pressed {
+    background-color: #388E3C;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>REMOVE</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_CHECKOUT">
+        <property name="maximumSize">
+         <size>
+          <width>439</width>
+          <height>41</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <pointsize>8</pointsize>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: white; /* Màu xanh lá */
+	border: 2px solid #4CAF50;
+    color: black
+; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}
+QPushButton:pressed {
+    background-color: #388E3C;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>CHECK OUT</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_3">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>380</y>
+       <width>211</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_3">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_8">
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="text">
+           <string>SUB TOTAL</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_2">
+          <property name="text">
+           <string>TAX</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_5">
+          <property name="text">
+           <string>TOTAL</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="verticalLayoutWidget_4">
+     <property name="geometry">
+      <rect>
+       <x>220</x>
+       <y>380</y>
+       <width>211</width>
+       <height>101</height>
+      </rect>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_7">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_9">
+        <item>
+         <widget class="QLabel" name="label_subtotal">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_tax">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QLabel" name="label_total">
+          <property name="text">
+           <string/>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </widget>
+   <widget class="QScrollArea" name="scrollArea_products">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>150</y>
+      <width>661</width>
+      <height>551</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::NoFrame</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Raised</enum>
+    </property>
+    <property name="lineWidth">
+     <number>3</number>
+    </property>
+    <property name="verticalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOn</enum>
+    </property>
+    <property name="horizontalScrollBarPolicy">
+     <enum>Qt::ScrollBarAlwaysOff</enum>
+    </property>
+    <property name="sizeAdjustPolicy">
+     <enum>QAbstractScrollArea::AdjustToContents</enum>
+    </property>
+    <property name="widgetResizable">
+     <bool>true</bool>
+    </property>
+    <widget class="QWidget" name="scrollContent2">
+     <property name="enabled">
+      <bool>true</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>0</x>
+       <y>0</y>
+       <width>648</width>
+       <height>551</height>
+      </rect>
+     </property>
+     <property name="autoFillBackground">
+      <bool>true</bool>
+     </property>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>-30</y>
+        <width>601</width>
+        <height>881</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="productContainer">
+       <property name="sizeConstraint">
+        <enum>QLayout::SetMinimumSize</enum>
+       </property>
+       <property name="leftMargin">
+        <number>5</number>
+       </property>
+       <property name="topMargin">
+        <number>0</number>
+       </property>
+       <property name="rightMargin">
+        <number>10</number>
+       </property>
+       <property name="horizontalSpacing">
+        <number>5</number>
+       </property>
+       <property name="verticalSpacing">
+        <number>10</number>
+       </property>
+       <item row="0" column="0">
+        <widget class="QFrame" name="productTemplate">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="maximumSize">
+          <size>
+           <width>211</width>
+           <height>241</height>
+          </size>
+         </property>
+         <property name="frameShape">
+          <enum>QFrame::StyledPanel</enum>
+         </property>
+         <property name="frameShadow">
+          <enum>QFrame::Raised</enum>
+         </property>
+         <widget class="QWidget" name="verticalLayoutWidget_2">
+          <property name="geometry">
+           <rect>
+            <x>0</x>
+            <y>0</y>
+            <width>211</width>
+            <height>241</height>
+           </rect>
+          </property>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <item>
+            <widget class="QLabel" name="label_image">
+             <property name="maximumSize">
+              <size>
+               <width>211</width>
+               <height>190</height>
+              </size>
+             </property>
+             <property name="autoFillBackground">
+              <bool>false</bool>
+             </property>
+             <property name="text">
+              <string>TextLabel</string>
+             </property>
+             <property name="wordWrap">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_product">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Minimum" vsizetype="Expanding">
+               <horstretch>211</horstretch>
+               <verstretch>51</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>211</width>
+               <height>51</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton {
+    background-color: transparent; /* Loại bỏ màu nền */
+    border: 2px solid #4CAF50; /* Viền màu xanh lá */
+    color: black; /* Màu chữ */
+    font-size: 14px;
+    border-radius: 8px; /* Bo góc */
+    padding: 8px 15px;
+}
+
+QPushButton:hover {
+    border: 2px solid #388E3C; /* Viền đậm hơn khi hover */
+    color: #388E3C; /* Màu chữ thay đổi khi hover */
+}
+
+QPushButton:pressed {
+    border: 2px solid #1B5E20; /* Viền đậm hơn khi bấm */
+    color: #1B5E20;
+}</string>
+             </property>
+             <property name="text">
+              <string>PushButton</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QPushButton" name="pushButton_icon">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>20</y>
+      <width>40</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #ffffff; /* Màu xanh lá */
+    color: black; /* Màu chữ trắng */
+    border-radius: 5px; /* Bo góc */
+    padding: 10px;
+}
+QPushButton:hover {
+    background-color: #45a049; /* Màu xanh lá đậm khi hover */
+}</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="iconSize">
+     <size>
+      <width>30</width>
+      <height>30</height>
+     </size>
+    </property>
+   </widget>
+   <zorder>scrollArea_products</zorder>
+   <zorder>pushButton_SEARCH</zorder>
+   <zorder>search_bar</zorder>
+   <zorder>scrollArea</zorder>
+   <zorder>groupBox</zorder>
+   <zorder>pushButton_icon</zorder>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1130</width>
+     <height>18</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
